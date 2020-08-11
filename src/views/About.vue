@@ -35,7 +35,8 @@ export default {
     }),
     methods: {
         submmit() {
-            const url = "http://127.0.0.1:5000/userresponse";
+            const url =
+                "http://creditscoreapi-env-1.eba-7zmfpp7h.us-east-2.elasticbeanstalk.com/userresponse";
             const data = this.$store.getters.getAllStates;
 
             //console.log(data, info);
