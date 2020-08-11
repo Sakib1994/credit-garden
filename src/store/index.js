@@ -72,7 +72,7 @@ export default new Vuex.Store({
       commit('setWorkExperience', payload)
     },
     setFinantialInfo: ({commit}, payload) => {
-      commit('setFinantialInfo', payload)
+      commit('setFinantialInfo', payload);
     }
   },
   getters: {
