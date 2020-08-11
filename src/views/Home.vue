@@ -27,7 +27,7 @@
           alt="Vuetify Name"
           class="shrink mt-1 hidden-sm-and-down"
           contain
-          src="@/assets/logo.svg"
+          src="../assets/landingImage.png"
           min-width="100"
           dark
           width="300"

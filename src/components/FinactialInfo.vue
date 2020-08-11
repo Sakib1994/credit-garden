@@ -3,6 +3,7 @@
       <v-card-title>
         Finactial Info
       </v-card-title>
+      <v-form v-model="valid">
       <v-card-text>
         <v-text-field
           :label="finantialQ[0].q"
@@ -127,7 +128,7 @@
           :rules="[requiredRules('bankruptcy status')]"
         />
         <v-text-field
-          v-show="finantialInfo.bankrupt_flag === 'Yes'"
+          v-if="finantialInfo.bankrupt_flag === 'Yes'"
           :label="finantialQ[23].q"
           v-model.number="finantialInfo.bankrupt_time_yrs"
           :rules="[requiredRules('Years have passed since your bankruptcy')]"
@@ -139,11 +140,12 @@
         Previous
       </v-btn>
       <v-spacer></v-spacer>
-      <v-btn @click="submit" color="success"
+      <v-btn @click="submit" color="success" :disabled="!valid"
         >Submit
         <v-icon right>mdi-arrow-right</v-icon>
       </v-btn>
       </v-card-actions>
+      </v-form>
     </v-card>
 </template>
 
@@ -155,7 +157,7 @@ export default {
     finantialQ: finantialQuestions,
     requiredRules(field) {
       return (v) => !!v || `${field} is required`;
-    },
+    },valid: true
   }),
   computed: {
     ...mapState(["finantialInfo"]),
@@ -165,8 +167,8 @@ export default {
   methods: {
     submit() {
       this.$store.dispatch('setFinantialInfo', this.finantialInfo);
-      this.$emit("submit");
-      console.log(this.$store.state);
+      
+      console.log(this.$store.getters.getAllStates);this.$emit("submit");
     },
     prev() {
       this.$emit("prev");
