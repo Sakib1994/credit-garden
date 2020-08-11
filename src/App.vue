@@ -1,12 +1,13 @@
 <template>
   <v-app>
-    <v-app-bar app color="grey lighten-5">
-      <div class="d-flex align-center">
-         <v-img
+    <v-app-bar app color="black lighten-5">
+      <div class="d-flex align-center" style="margin-left: 5%;">
+        <v-img
           alt="Vuetify Name"
           class="shrink mt-1 hidden-sm-and-down"
           contain
-          min-width="100" dark
+          min-width="100"
+          dark
           width="100"
         />
         <v-img
@@ -20,17 +21,15 @@
       </div>
 
       <v-spacer></v-spacer>
-
-      <v-btn
-        text dark router to="/about"
-        color="success"
-      >
-        <span class="mr-2">About</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
+      <div class="d-flex justify-content-end" style="margin-right: 15%;">
+        <v-btn text dark router to="/about" color="success">
+          <span class="mr-2">About</span>
+          <v-icon>mdi-open-in-new</v-icon>
+        </v-btn>
+      </div>
     </v-app-bar>
 
-    <v-main> 
+    <v-main>
       <router-view></router-view>
     </v-main>
   </v-app>

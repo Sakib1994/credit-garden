@@ -1,24 +1,15 @@
 <template>
   <div class="home">
-    <v-row
-      no-gutters
-      style="height: 70vh;background: #a4d05f;"
-      align="center"
-      justify="center"
-    >
+    <v-row no-gutters style="height: 70vh;background: #a4d05f;" align="center" justify="center">
       <v-col cols="4">
-        <v-card class="pa-2" outlined tile color="#a4d05f">
-          <v-card-title class="text-h3">
-            Start building your credit score
-          </v-card-title>
+        <v-card class="pa-" outlined tile color="#a4d05f">
+          <v-card-title class="text-h3">Start building your credit score</v-card-title>
           <v-card-text class="text-h6">
             Sign up now to be alerted when we launch and receive 100% of your
             processing fee
           </v-card-text>
           <v-card-actions>
-            <v-btn class="ml-2" color="white primary--text"
-              >Sign up for early access</v-btn
-            >
+            <v-btn class="ml-2" color="white primary--text">Sign up for early access</v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
@@ -48,8 +39,7 @@
           <v-col cols="4" md="3">
             <v-card>
               <v-card-title class="text-subtitle-1" style="text-align: center">
-                <v-icon class="mx-auto my-2" large style="width: 100%">mdi-folder</v-icon>
-                help friend climb the credit Ladder
+                <v-icon class="mx-auto my-2" large style="width: 100%">mdi-folder</v-icon>help friend climb the credit Ladder
               </v-card-title>
               <v-card-text></v-card-text>
             </v-card>
@@ -57,18 +47,20 @@
           <v-col cols="4" md="3">
             <v-card>
               <v-card-title class="text-subtitle-1" style="text-align: center">
-                
-                <v-icon color="pink darken-2" large class="mx-auto my-2" style="width: 100%">mdi-newspaper-variant-multiple</v-icon>
-                
-                By far the easiest way to get a loan </v-card-title>
-              <v-card-text></v-card-text> 
-              </v-card>
+                <v-icon
+                  color="pink darken-2"
+                  large
+                  class="mx-auto my-2"
+                  style="width: 100%"
+                >mdi-newspaper-variant-multiple</v-icon>By far the easiest way to get a loan
+              </v-card-title>
+              <v-card-text></v-card-text>
+            </v-card>
           </v-col>
           <v-col cols="4" md="3">
             <v-card>
               <v-card-title class="text-subtitle-1">
-                <v-icon class="mx-auto my-2" large style="width: 100%">mdi-hammer-screwdriver</v-icon>
-                Complete weekly Challenges, We guide you on your credit journey
+                <v-icon class="mx-auto my-2" large style="width: 100%">mdi-hammer-screwdriver</v-icon>Complete weekly Challenges, We guide you on your credit journey
               </v-card-title>
               <v-card-text></v-card-text>
             </v-card>
