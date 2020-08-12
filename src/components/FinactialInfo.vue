@@ -25,14 +25,14 @@
                     :rules="[requiredRules('Loan security type')]"
                 />
                 <v-text-field
-                    v-show="finantialInfo.secured_flag === 'Secured'"
+                    v-if="finantialInfo.secured_flag === 'Secured'"
                     type="number"
                     :label="finantialQ[3].q"
                     v-model.number="finantialInfo.asset_value"
                     :rules="[requiredRules('Security asset value')]"
                 />
                 <v-select
-                    v-show="finantialInfo.secured_flag === 'Secured'"
+                    v-if="finantialInfo.secured_flag === 'Secured'"
                     v-model="finantialInfo.asset_type"
                     :items="finantialQ[4].option"
                     :label="finantialQ[4].q"
