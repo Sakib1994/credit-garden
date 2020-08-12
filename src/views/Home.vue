@@ -2,47 +2,50 @@
     <div class="home">
         <v-row
             no-gutters
-            style="height: 70vh;background: #a4d05f;"
+            style="height: 65vh;background: #a4d05f; text-align:center;"
             align="center"
             justify="center"
         >
-            <v-col cols="4">
-                <v-card class="pa-" outlined tile color="#a4d05f">
-                    <v-card-title class="text-h3"
-                        >Start building your credit score</v-card-title
+            <v-col cols="8">
+                <v-card outlined tile color="#a4d05f">
+                    <v-card-text
+                        class="text-h3 py-0"
+                        style="text-align: center; color: #223560;  font-weight: 700; font-family: Lato, sans-serif;"
                     >
-                    <v-card-text class="text-h6">
-                        Sign up now to be alerted when we launch and receive
-                        100% of your processing fee
+                        Start building your credit score</v-card-text
+                    >
+                    <v-card-text
+                        class="text-h5"
+                        style="text-align: center; color: #223560"
+                    >
+                        Get your credit score and know your financial risk while
+                        taking loan. Start building your credit score the most
+                        convenient way.
                     </v-card-text>
-                    <v-card-actions>
-                        <v-btn class="ml-2" color="white primary--text"
-                            >Sign up for early access</v-btn
-                        >
-                    </v-card-actions>
+
+                    <v-btn
+                        class="my-4"
+                        outlined
+                        large
+                        color="#223560"
+                        style="text-align: center; color: #223560;  font-weight: bold; font-family: Lato, sans-serif;"
+                        >GET YOUR SCORE NOW!</v-btn
+                    >
                 </v-card>
-            </v-col>
-            <v-col cols="4">
-                <v-img
-                    alt="Vuetify Name"
-                    class="shrink mt-1 hidden-sm-and-down"
-                    contain
-                    src="../assets/landingImage.png"
-                    min-width="100"
-                    dark
-                    width="300"
-                />
             </v-col>
         </v-row>
         <v-row
             no-gutters
-            style="height: 10vh;background: #223560"
+            style="height: 7vh;background: #223560;"
             align="center"
         >
             <v-col>
-                <p class="text-h6 white--text" style="text-align: center">
-                    We are looking for new ways to deliver finantial oppertunaty
-                    - No matter how you define it
+                <p
+                    class=" white--text"
+                    style="text-align: center; font-weight: 400; font-family: Lato, sans-serif;"
+                >
+                    We are looking for new ways to deliver financial opportunity
+                    -- No matter how you define it.
                 </p>
             </v-col>
         </v-row>

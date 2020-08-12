@@ -32,15 +32,22 @@
         <v-main>
             <router-view></router-view>
         </v-main>
+
+        <v-footer padless>
+            <v-col class="grey lighten-5 text-center" cols="12">
+                <div style="color: #BDBDBD;font-size: 12px">
+                    <strong>Copyright </strong>{{ new Date().getFullYear() }} —
+                    <strong>CreditGardenLtd</strong>
+                </div>
+            </v-col>
+        </v-footer>
     </v-app>
 </template>
-
 <style lang="scss" scoped>
 .app {
     font-family: "Lato", sans-serif;
 }
 </style>
-
 <script>
 export default {
     name: "App",
