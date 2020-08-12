@@ -1,5 +1,5 @@
 export const questionsd = [
-    { q: "Years living at current address", option: "" },
+    { q: "Years living at current address", option: 0 },
     {
         q: "Ownership of current residence",
         option: ["None", "Rent", "Lease", "Mortgage", "Family Home", "Own"],
@@ -8,7 +8,7 @@ export const questionsd = [
         q: "Type of residence you currently in",
         option: ["Apartment", "Townhouse", "House"],
     },
-    { q: "Years lived at previous address", option: "" },
+    { q: "Years lived at previous address", option: 0 },
     {
         q: "Ownership of previous residence",
         option: ["None", "Rent", "Lease", "Mortgage", "Family Home", "Own"],
@@ -24,10 +24,10 @@ export const questionsd = [
     { q: "Gender", option: ["None", "Male", "Female"] },
     {
         q: "Number of Dependents (persons you take care of financially)",
-        option: "",
+        option: 0,
     },
-    { q: "Number of Dependents living with you", option: "" },
-    { q: "Age", option: "" },
+    { q: "Number of Dependents living with you", option: 0 },
+    { q: "Age", option: 0 },
 ];
 
 export const workExperienceD = [
@@ -64,7 +64,7 @@ export const workExperienceD = [
     {
         q: "Years in current position",
         type: "numeric",
-        option: "",
+        option: 0,
     },
     {
         q: "Industry you currently work in",
@@ -136,7 +136,7 @@ export const workExperienceD = [
     {
         q: "Years in previous position",
         type: "numeric",
-        option: "",
+        option: 0,
     },
     {
         q: "Industry of previous employment",
@@ -208,7 +208,7 @@ export const workExperienceD = [
     {
         q: "Years in previous position",
         type: "numeric",
-        option: "",
+        option: 0,
     },
     {
         q: "Industry of previous employment",
@@ -249,11 +249,11 @@ export const workExperienceD = [
     },
 ];
 export const finantialQuestions = [
-    { q: "How much are you planning to borrow?", type: "numeric", option: "" },
+    { q: "How much are you planning to borrow?", type: "numeric", option: 0 },
     {
         q: "How many months are you planning to take the loan for?",
         type: "numeric",
-        option: "",
+        option: 0,
     },
 
     {
@@ -262,7 +262,7 @@ export const finantialQuestions = [
         option: ["Secured", "Unsecured"],
     },
 
-    { q: "What is the value of the security?", type: "numeric", option: "" },
+    { q: "What is the value of the security?", type: "numeric", option: 0 },
 
     {
         q: "Security Type",
@@ -287,26 +287,26 @@ export const finantialQuestions = [
             "Debt Consolidation",
         ],
     },
-    { q: "Monthly Credit Card Payment", type: "numeric", option: "" },
-    { q: "Mortgage Payments", type: "numeric", option: "" },
-    { q: "Car Loan Payments", type: "numeric", option: "" },
-    { q: "Other Loan Payments", type: "numeric", option: "" },
-    { q: "Rent Payment", type: "numeric", option: "" },
-    { q: "How much do you spend on utilities?", type: "numeric", option: "" },
-    { q: "Non-life Insurance Payment", type: "numeric", option: "" },
+    { q: "Monthly Credit Card Payment", type: "numeric", option: 0 },
+    { q: "Mortgage Payments", type: "numeric", option: 0 },
+    { q: "Car Loan Payments", type: "numeric", option: 0 },
+    { q: "Other Loan Payments", type: "numeric", option: 0 },
+    { q: "Rent Payment", type: "numeric", option: 0 },
+    { q: "How much do you spend on utilities?", type: "numeric", option: 0 },
+    { q: "Non-life Insurance Payment", type: "numeric", option: 0 },
     {
         q: "Life Insurance Payments",
         type: "numeric",
-        option: "",
+        option: 0,
     },
-    { q: "Transport Expenses", type: "numeric", option: "" },
-    { q: "Living Expenses", type: "numeric", option: "" },
-    { q: "Education Expenses", type: "numeric", option: "" },
-    { q: "Medical Expenses", type: "numeric", option: "" },
-    { q: "Entertainment Expenses", type: "numeric", option: "" },
-    { q: "Other Monthly Income", type: "numeric", option: "" },
-    { q: "Net Monthly Income", type: "numeric", option: "" },
-    { q: "Other Monthly Expenses", type: "numeric", option: "" },
+    { q: "Transport Expenses", type: "numeric", option: 0 },
+    { q: "Living Expenses", type: "numeric", option: 0 },
+    { q: "Education Expenses", type: "numeric", option: 0 },
+    { q: "Medical Expenses", type: "numeric", option: 0 },
+    { q: "Entertainment Expenses", type: "numeric", option: 0 },
+    { q: "Other Monthly Income", type: "numeric", option: 0 },
+    { q: "Net Monthly Income", type: "numeric", option: 0 },
+    { q: "Other Monthly Expenses", type: "numeric", option: 0 },
     {
         q: "Have you ever been bankrupt?",
         type: "dropdown",
@@ -315,6 +315,6 @@ export const finantialQuestions = [
     {
         q: "How many years have passed since your bankruptcy?",
         type: "numeric",
-        option: "",
+        option: 0,
     },
 ];
