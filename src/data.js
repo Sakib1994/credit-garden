@@ -18,18 +18,21 @@ export const questionsd = [
         option: ["Apartment", "Townhouse", "House"],
     },
     {
-        q: "What is your Marital Status?",
+        q: "Marital Status",
         option: ["Single", "Married", "Divorced"],
     },
-    { q: "What is your Gender?", option: ["None", "Male", "Female"] },
-    { q: "How many dependents do you have?", option: "" },
-    { q: "How many dependents live with you?", option: "" },
-    { q: "What is your age?", option: "" },
+    { q: "Gender", option: ["None", "Male", "Female"] },
+    {
+        q: "Number of Dependents (persons you take care of financially)",
+        option: "",
+    },
+    { q: "Number of Dependents living with you", option: "" },
+    { q: "Age", option: "" },
 ];
 
 export const workExperienceD = [
     {
-        q: "What is your current employment status?",
+        q: "Current Employment status",
         type: "dropdown",
         option: [
             "None",
@@ -41,7 +44,7 @@ export const workExperienceD = [
         ],
     },
     {
-        q: "What is your current employment level?",
+        q: "Current Employment level",
         type: "dropdown",
         option: [
             "None",
@@ -59,12 +62,12 @@ export const workExperienceD = [
         ],
     },
     {
-        q: "How many years have you worked in your current position?",
+        q: "Years in current position",
         type: "numeric",
         option: "",
     },
     {
-        q: "What Industry do you currently work in?",
+        q: "Industry you currently work in",
         type: "dropdown",
         option: [
             "None",
@@ -101,7 +104,7 @@ export const workExperienceD = [
         ],
     },
     {
-        q: "What was your previous employment status?",
+        q: "Previous Employment status",
         type: "dropdown",
         option: [
             "None",
@@ -113,7 +116,7 @@ export const workExperienceD = [
         ],
     },
     {
-        q: "What was your previous employment level?",
+        q: "Previous Employment level",
         type: "dropdown",
         option: [
             "None",
@@ -131,12 +134,12 @@ export const workExperienceD = [
         ],
     },
     {
-        q: "How many years have you worked in your previous position?",
+        q: "Years in previous position",
         type: "numeric",
         option: "",
     },
     {
-        q: "What Industry did you previously work in?",
+        q: "Industry of previous employment",
         type: "dropdown",
         option: [
             "None",
@@ -173,7 +176,7 @@ export const workExperienceD = [
         ],
     },
     {
-        q: "What was your previous employment status?",
+        q: "Previous Employment status",
         type: "dropdown",
         option: [
             "None",
@@ -185,7 +188,7 @@ export const workExperienceD = [
         ],
     },
     {
-        q: "What was your previous employment level?",
+        q: "Previous Employment level",
         type: "dropdown",
         option: [
             "None",
@@ -203,12 +206,12 @@ export const workExperienceD = [
         ],
     },
     {
-        q: "How many years have you worked in your previous position?",
+        q: "Years in previous position",
         type: "numeric",
         option: "",
     },
     {
-        q: "What Industry did you previously work in?",
+        q: "Industry of previous employment",
         type: "dropdown",
         option: [
             "None",
@@ -262,7 +265,7 @@ export const finantialQuestions = [
     { q: "What is the value of the security?", type: "numeric", option: "" },
 
     {
-        q: "What Asset will you secure your loan with?",
+        q: "Security Type",
         type: "dropdown",
         option: [
             "Financial Instruments",
@@ -273,7 +276,7 @@ export const finantialQuestions = [
         ],
     },
     {
-        q: "What is the purpose of your loan?",
+        q: "Purpose of Loan",
         type: "dropdown",
         option: [
             "Education",
@@ -290,9 +293,9 @@ export const finantialQuestions = [
     { q: "Other Loan Payments", type: "numeric", option: "" },
     { q: "Rent Payment", type: "numeric", option: "" },
     { q: "How much do you spend on utilities?", type: "numeric", option: "" },
-    { q: "Insurance Payment", type: "numeric", option: "" },
+    { q: "Non-life Insurance Payment", type: "numeric", option: "" },
     {
-        q: "How much do you spend on life insurance premiums?",
+        q: "Life Insurance Payments",
         type: "numeric",
         option: "",
     },
@@ -302,7 +305,7 @@ export const finantialQuestions = [
     { q: "Medical Expenses", type: "numeric", option: "" },
     { q: "Entertainment Expenses", type: "numeric", option: "" },
     { q: "Other Monthly Income", type: "numeric", option: "" },
-    { q: "What is your Net Monthly Income?", type: "numeric", option: "" },
+    { q: "Net Monthly Income", type: "numeric", option: "" },
     { q: "Other Monthly Expenses", type: "numeric", option: "" },
     {
         q: "Have you ever been bankrupt?",
