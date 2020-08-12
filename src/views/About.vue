@@ -38,7 +38,7 @@ export default {
         "http://creditscoreapi-env-1.eba-7zmfpp7h.us-east-2.elasticbeanstalk.com/userresponse";
       const data = this.$store.getters.getAllStates;
 
-      //console.log(data);
+      console.log(data);
       axios.post(url, data).then(({ data, status }) => {
         if (status === 200) {
           console.log(data.message.score);
