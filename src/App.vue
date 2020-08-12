@@ -23,8 +23,7 @@
             <v-spacer></v-spacer>
             <div class="d-flex justify-content-end" style="margin-right: 15%;">
                 <v-btn text dark router to="/about" color="success">
-                    <span class="mr-2">About</span>
-                    <v-icon>mdi-open-in-new</v-icon>
+                    <span class="mr-2">Privacy</span>
                 </v-btn>
             </div>
         </v-app-bar>
