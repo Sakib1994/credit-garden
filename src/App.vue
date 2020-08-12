@@ -35,6 +35,12 @@
     </v-app>
 </template>
 
+<style lang="scss" scoped>
+.app {
+    font-family: "Lato", sans-serif;
+}
+</style>
+
 <script>
 export default {
     name: "App",
