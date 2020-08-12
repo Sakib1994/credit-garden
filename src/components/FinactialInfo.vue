@@ -192,7 +192,7 @@ export default {
         submit() {
             this.$store.dispatch("setFinantialInfo", this.finantialInfo);
 
-            console.log(this.$store.getters.getAllStates);
+            //console.log(this.$store.getters.getAllStates);
             this.$emit("submit");
         },
         prev() {

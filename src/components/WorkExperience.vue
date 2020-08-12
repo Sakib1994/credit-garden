@@ -102,7 +102,7 @@ export default {
         ...mapState(["workExperience"]),
     },
     mounted() {
-        console.log(this.$store.state.demographics);
+        //console.log(this.$store.state.demographics);
     },
     methods: {
         next() {

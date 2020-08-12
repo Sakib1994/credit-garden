@@ -15,44 +15,7 @@
           v-if="tracker === 3"
         />
         <!-- pop up -->
-        <v-dialog v-model="dialog" width="500">
-
-          <v-card>
-            <v-card-title class="headline grey lighten-2">
-              Credit score
-            </v-card-title>
-
-            <v-card-text>
-              <v-row>
-                  <v-col cols="6">
-                    <v-img
-                        alt="modal image"
-                        class="shrink mr-2"
-                        contain
-                        src="@/assets/modal.jpg"
-                        transition="scale-transition"
-                        width="120"
-                        />   
-                    </v-col>
-                  <v-col cols="6">
-                      <v-card>
-                          <v-card-title>Show Credit Score</v-card-title>
-                      </v-card>
-                  </v-col>
-              </v-row>
-            </v-card-text>
-
-            <v-divider></v-divider>
-
-            <v-card-actions>
-              <v-spacer></v-spacer>
-              <v-btn color="primary" text @click="dialog = false">
-                I accept
-              </v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-dialog>
-        <v-btn @click="dialog = true">Open dialog</v-btn>
+        <app-pop-up :flag="flag" :score="score"></app-pop-up>
       </v-col>
     </v-row>
   </div>
@@ -63,15 +26,18 @@ import axios from "axios";
 import Demographics from "@/components/Demographics";
 import WorkExperienceVue from "../components/WorkExperience.vue";
 import FinactialInfoVue from "../components/FinactialInfo.vue";
+import PopUp from'../components/PopUp.vue'
+
 export default {
   components: {
     appDemographics: Demographics,
     appWorkExperience: WorkExperienceVue,
     appFinantialInfo: FinactialInfoVue,
+    appPopUp:PopUp
   },
   data: () => ({
     tracker: 1,
-    dialog: false,
+    flag: {dialog: false},
     score: [],
   }),
   methods: {
@@ -83,8 +49,9 @@ export default {
       //console.log(data, info);
       axios.post(url, data).then(({ data, status }) => {
         if (status === 200) {
+            console.log(data.message.score);
           this.score = data.message.score;
-          console.log(data.message.score);
+          this.flag.dialog = true;
         }
       });
       console.log("Submitted");
