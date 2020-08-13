@@ -1,19 +1,10 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
     <v-row justify="center">
       <v-col cols="8">
         <app-demographics @next="tracker = 2" v-if="tracker === 1" />
-        <app-work-experience
-          @prev="tracker = 1"
-          @next="tracker = 3"
-          v-if="tracker === 2"
-        />
-        <app-finantial-info
-          @prev="tracker = 2"
-          @submit="submmit"
-          v-if="tracker === 3"
-        />
+        <app-work-experience @prev="tracker = 1" @next="tracker = 3" v-if="tracker === 2" />
+        <app-finantial-info @prev="tracker = 2" @submit="submmit" v-if="tracker === 3" />
         <!-- pop up -->
         <v-btn @click="submmit"></v-btn>
         <app-pop-up :flag="flag" :score="score" :user_id="user_id"></app-pop-up>

@@ -21,12 +21,15 @@
           <v-btn
             router
             to="/about"
-            class="my-4"
-            outlined
-            large
+            class="my-6"
             color="#223560"
-            style="text-align: center; color: #223560;  font-weight: bold; font-family: Lato, sans-serif;"
-          >GET YOUR SCORE NOW!</v-btn>
+            tile
+            large
+            style="text-align: center; color: white;  font-weight: bold; font-family: Lato, sans-serif;"
+          >
+            GET YOUR SCORE NOW
+            <v-icon right>mdi-send</v-icon>
+          </v-btn>
         </v-card>
       </v-col>
     </v-row>

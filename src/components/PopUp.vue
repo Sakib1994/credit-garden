@@ -38,13 +38,7 @@
                     ></v-text-field>
                   </v-col>
                   <v-col cols="3" class="my-0">
-                    <v-btn
-                      class="mt-1 pr-2"
-                      color="green"
-                      @click="sendMail"
-                      dark
-                      >Send</v-btn
-                    >
+                    <v-btn class="mt-1 pr-2" color="green" @click="sendMail" dark>Send</v-btn>
                   </v-col>
                 </v-row>
               </v-card-actions>
@@ -58,14 +52,15 @@
       <v-card-actions>
         <v-btn color="secondary" outlined @click="logData">log Data</v-btn>
         <v-spacer></v-spacer>
-        <v-btn color="primary" text @click="flag.dialog = false">close</v-btn>
+
+        <v-btn router to="/" color="primary" text @click="flag.dialog = false">close</v-btn>
       </v-card-actions>
     </v-card>
   </v-dialog>
 </template>
 
 <script>
-import axios from 'axios';
+import axios from "axios";
 export default {
   props: ["flag", "score", "user_id"],
   data: () => ({
@@ -81,10 +76,11 @@ export default {
         user_id: this.user_id,
         score: this.score,
       };
-      const url ="http://creditscoreapi-env-1.eba-7zmfpp7h.us-east-2.elasticbeanstalk.com/sendmail";
+      const url =
+        "http://creditscoreapi-env-1.eba-7zmfpp7h.us-east-2.elasticbeanstalk.com/sendmail";
 
       try {
-        axios.post(url, data).then(({status, data}) => {
+        axios.post(url, data).then(({ status, data }) => {
           if (status === 200) {
             console.log(data.message);
           }
