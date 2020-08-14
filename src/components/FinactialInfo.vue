@@ -63,6 +63,7 @@
               :rules="[requiredRules('Loan purpose')]"
             />
           </v-col>
+
           <v-col cols="12" sm="6">
             <v-text-field
               clearable
@@ -71,6 +72,9 @@
               type="number"
               v-model.number="finantialInfo.credit_card"
             />
+          </v-col>
+          <v-col cols="12">
+            <v-card-subtitle>MONTHLY EXPENSES</v-card-subtitle>
           </v-col>
           <v-col cols="12" sm="6">
             <v-text-field
@@ -247,10 +251,10 @@
             <v-switch
               outlined
               v-model="aggree"
-              label="I aggree with Privacy Agrement"
+              label="I agree with Privacy Agrement"
               color="success"
               value="success"
-              :rules="[requiredRules('You need to aggree with Privacy Agrement')]"
+              :rules="[requiredRules('Please read and accept the Terms of Use and Privacy Agreement')]"
             ></v-switch>
           </v-col>
         </v-row>
@@ -260,7 +264,14 @@
           <v-icon left>mdi-arrow-left</v-icon>Previous
         </v-btn>
         <v-spacer></v-spacer>
-        <v-btn outlined tile @click="submit" color="success" :disabled="!valid">
+        <v-btn
+          outlined
+          tile
+          @click="submit"
+          color="success"
+          :disabled="!valid"
+          :loading="$store.state.loader"
+        >
           Submit
           <v-icon right>mdi-arrow-right</v-icon>
         </v-btn>
@@ -276,7 +287,7 @@ export default {
   data: () => ({
     finantialQ: finantialQuestions,
     requiredRules(field) {
-      return (v) => !!v || `${field} is required`;
+      return (v) => !!v || `${field} `;
     },
     valid: true,
     aggree: false,

@@ -5,6 +5,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
     state: {
+        loader: false,
         demographics: {
             address1yrs: "",
             address1stat: "",
@@ -63,6 +64,7 @@ export default new Vuex.Store({
         setDemographics: (state, payload) => (state.demographics = payload),
         setWorkExperience: (state, payload) => (state.workExperience = payload),
         setFinantialInfo: (state, payload) => (state.finantialInfo = payload),
+        setLoader: (state, payload) => (state.loader = payload),
     },
     actions: {
         setDemographics: ({ commit }, payload) => {

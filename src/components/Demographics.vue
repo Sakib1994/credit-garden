@@ -1,7 +1,7 @@
 <template>
   <div class="demographics">
     <v-card outlined class="mx-auto mb-4" max-width="650">
-      <v-card-title>DEMOGRAPHY</v-card-title>
+      <v-card-title>DEMOGRAPHIC INFORMATION</v-card-title>
 
       <v-form v-model="valid">
         <v-card-text>

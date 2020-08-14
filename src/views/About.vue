@@ -88,6 +88,7 @@ export default {
         bankrupt_time_yrs: 0,
       };
       try {
+        this.$store.commit("setLoader", true);
         axios.post(url, info).then(({ data, status }) => {
           if (status === 200) {
             this.score = data.message.score;
@@ -95,10 +96,12 @@ export default {
             this.flag.dialog = true;
             console.log(this.user_id, this.score);
           }
+          this.$store.commit("setLoader", false);
         });
         console.log("Submitted");
       } catch (error) {
         console.log(error);
+        this.$store.commit("setLoader", false);
       }
     },
   },

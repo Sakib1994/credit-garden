@@ -1,7 +1,7 @@
 <template>
   <v-dialog v-model="flag.dialog" width="700">
     <v-card>
-      <v-card-title class="headline grey lighten-2">Credit score</v-card-title>
+      <v-card-title class="white--text headline indigo darken-4">CREDIT SCORE</v-card-title>
 
       <v-card-text>
         <v-row>
@@ -18,8 +18,8 @@
           <v-col cols="7">
             <v-card class="white--text text-center" color="#223560" width="400">
               <v-card-text>
-                <p class="text-h5 white--text my-1">Risk Profile</p>
-                <p class="text-h3 white--text mt-1 mb-0">{{ score[3] }}</p>
+                <p class="text-h5 white--text my-1">RISK PROFILE</p>
+                <p class="text-h3 white--text mt-1 mb-0">{{ Math.round(score[3]) }}</p>
                 <p class="text-subtitle-1 white--text my-0">Credit Score</p>
                 <p class="text-h4 white--text mt-2">{{ score[1] }}</p>
                 <p class="text-subtitle-1 white--text my-2">Risk Level</p>
@@ -29,7 +29,7 @@
                 <v-row class="my-0">
                   <v-col cols="9" class="my-0">
                     <v-text-field
-                      label="Get Result On Your Email"
+                      label="Email my Risk Profile"
                       outlined
                       type="email"
                       dense

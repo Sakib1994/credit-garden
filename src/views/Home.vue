@@ -1,8 +1,8 @@
 <template>
-  <div class="home">
+  <div class="home custom-selector">
     <v-row
       no-gutters
-      style="height: 65vh;background: #a4d05f; text-align:center;"
+      style="height: 55vh;background: #a4d05f; text-align:center;"
       align="center"
       justify="center"
     >
@@ -11,12 +11,11 @@
           <v-card-text
             class="text-h3 py-0"
             style="text-align: center; color: #223560;  font-weight: 700; font-family: Lato, sans-serif;"
-          >Start building your credit score</v-card-text>
-          <v-card-text class="text-h5" style="text-align: center; color: #223560">
-            Get your credit score and know your financial risk while
-            taking loan. Start building your credit score the most
-            convenient way.
-          </v-card-text>
+          >Know your Credit Score</v-card-text>
+          <v-card-text
+            class="text-h5"
+            style="text-align: center; color: #223560"
+          >Get your free credit score from Credit Garden. Our Rating System measures your creditworthiness on a scale of 0 to 999, the higher your score the better your Credit</v-card-text>
 
           <v-btn
             router
@@ -38,10 +37,7 @@
         <p
           class="white--text"
           style="text-align: center; font-weight: 400; font-family: Lato, sans-serif; padding-top: 10px"
-        >
-          We are looking for new ways to deliver financial opportunity
-          -- No matter how you define it.
-        </p>
+        >Our goal is financial inclusion and better quality of life for all</p>
       </v-col>
     </v-row>
   </div>
@@ -54,4 +50,3 @@ export default {
   name: "Home",
   components: {},
 };
-</script>

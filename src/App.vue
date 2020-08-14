@@ -1,6 +1,6 @@
 <template>
   <v-app class="app">
-    <v-app-bar app color="black lighten-5">
+    <v-app-bar app color="#223560">
       <div class="d-flex align-center" style="margin-left: 5%;">
         <v-img
           alt="Vuetify Name"
@@ -23,7 +23,7 @@
       <v-spacer></v-spacer>
       <div class="d-flex justify-content-end" style="margin-right: 15%;">
         <v-btn router to="/" icon color="green">
-          <v-icon>mdi-cached</v-icon>
+          <v-icon>mdi-home</v-icon>
         </v-btn>
       </div>
     </v-app-bar>
@@ -33,11 +33,14 @@
     </v-main>
 
     <v-footer padless>
-      <v-col class="grey lighten-5 text-center" cols="12">
-        <div style="color: #BDBDBD;font-size: 12px">
+      <v-col class="grey lighten-5 text-left" cols="12">
+        <div style="color: #757575;font-size: 13px">
+          <span style="color: #BDBDBD;">
+            <strong>Disclaimer:</strong> The CreditGarden Risk Score Estimator is for informational purposes only and is intended to approximate your Credit Score range based on answers to the questions provided. Your actual score, and the impact of any actions taken, results from institution-specific scoring methodologies and the information on your credit reports.
+          </span>
+          {{" "}}
           <strong>Copyright</strong>
-          {{ new Date().getFullYear() }} —
-          <strong>CreditGardenLtd</strong>
+          {{ new Date().getFullYear() }} — CreditGarden Ltd.
         </div>
       </v-col>
     </v-footer>
@@ -48,6 +51,7 @@
   font-family: "Lato", sans-serif;
 }
 </style>
+
 <script>
 export default {
   name: "App",
