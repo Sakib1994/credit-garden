@@ -74,7 +74,7 @@
             />
           </v-col>
           <v-col cols="12">
-            <v-card-subtitle>MONTHLY EXPENSES</v-card-subtitle>
+            <v-card-subtitle class="pl-1" style="font-size:16.5px; color: black">MONTHLY EXPENSES</v-card-subtitle>
           </v-col>
           <v-col cols="12" sm="6">
             <v-text-field
